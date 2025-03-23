@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archer Tasks Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+
+    .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+    }
+
+    .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Archer Tasks</h1>
+                <p>Archer Tasks is a task manager or to do list application that helps you manage tasks that have to be done with separated lists.</p>
+
+                <a href="https://www.amazon.com/gp/product/B0DWKBRFGL" class="google-play-btn" target="_blank">
+                    <img src="img/amazon_app_store.png" height="40px" alt="Amazon Appstore">
+                </a>
+
+                <a href="https://drive.google.com/file/d/1pW6VpPfsoMvT-pKOfSJWCJyVdQdQRaZj/view" class="google-play-btn" target="_blank">
+                    <img src="img/download_apk_btn.png" height="40px" alt="Direct Download APK">
+                </a>
+                
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/archer_tasks/archer_tasks_logo.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Manages tasks that have to be done with separated lists. </li>
+                    <li>Create/Edit/Delete lists. A list contains 4 properties: name of the list, description of the list, list priority and color.</li>
+                    <li>Inside a list, you can manage tasks. A lists consists of properties: task name, priority (low, medium and high) , categories (unspecified, work,
+personal, home, health, finance, social, education, errands, goals and miscellaneous), due date, time, color note and task note.</li>
+                    <li>Sort lists by name in ascending and descending orders, priority (Lowest to Highest OR Highest to Lowest), created time.</li>
+                    <li>Sort tasks by name in ascending and descending orders, priority (Lowest to Highest OR Highest to Lowest), created time and completion status
+(show completed tasks first OR uncompleted tasks first).</li>
+                    <li>Trash Feature: A task menu has “Move To Trash” option. That option will remove task from list and put it in trash. You can restore removed tasks from trash at any time and can delete that task forever from tash. Empty Trash</li>
+                    <li>Moving Task from a list to other lists.</li>
+                    <li>
+                        From the app setting, you can reset all the tasks and lists.
+                    </li>
+                    <li>Multiple Color Theme</li>
+                    <li>Biometric Login can be enabled from app setting if you want.</li>
+                    <li>Disable/Enable tasking screenshot of lists and tasks</li>
+                    <li>Supports 5 different languages: English, Burmese, Japanese, Thai and Chinese.</li>
+                    <li>Home screen widget</li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Jetpack Compose : Jetpack Compose is Android’s recommended modern toolkit for building native UI. It simplifies and accelerates UI
+development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.</li>
+                    <li>Clean Architecture, MVVM : Clean architecture aims to divide into pieces (classes, entities, modules etc.), make them independent from each
+other to make project become more maintainable, flexible and easy to work on together.</li>
+                    <li>Material 3 Design : Material 3 is the latest version of Google’s open-source design system.</li>
+                    <li>Realm : applied as database.</li>
+                    <li>Data Store Preferences : used to save settings such as theme settings, language settings, biometric settings and screenshot settings.</li>
+                    <li>Dagger Hilt : utilized for dependency injection</li>
+                    <li>ViewModel</li>
+                    <li>Compose ConstraintLayout</li>
+                    <li>Lottie Composition</li>
+                    <li>Native Splash Screen API</li>
+                    <li>Glance : to provide home screen widget</li>
+                    <li>Biometric</li>
+                    <li>Navigation Compose : Component that allows easier implementation of navigation from composables.</li>
+                    <li>Jetpack Compose animation APIs</li>
+                </ul>
+
+            </div>
+            <div class="main-poster">
+                <img src="img/archer_tasks/archer_tasks_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/archer_tasks/page1 – 14.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 19.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 20.png" alt="Poster 1">
+               <img src="img/archer_tasks/page1 – 21.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 22.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 23.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 24.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 25.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 26.png" alt="Poster 1">
+                <img src="img/archer_tasks/page1 – 27.png" alt="Poster 1">
+
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

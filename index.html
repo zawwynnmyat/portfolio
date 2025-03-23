@@ -1,0 +1,1591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Zaw Win Myat's Protfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<script>
+
+    function copyEmail() {
+        const email = "zawwinmyat.dev@gmail.com";
+        navigator.clipboard.writeText(email).then(() => {
+            alert("Email address copied to clipboard!");
+        }).catch(err => {
+            console.error("Failed to copy email: ", err);
+        });
+    }
+
+    function showContactModal() {
+        document.getElementById('contactModal').style.display = 'block';
+    }
+
+</script>
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+							<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area" id = "home">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hell0</h3>
+							<h1>I am Zaw Win Myat</h1>
+							<h5 class="text-uppercase">mobile application developer</h5>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px; margin-bottom: 30px;">
+                                <img src="img/android.png" alt="Android" style="width: 50px; height: 50px; background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/ios.png" alt="iOS" style="width: 50px; height: 50px; background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/kotlin.png" alt="Kotlin" style="width: 50px; height: 50px;  background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/compose.png" alt="Compose" style="width: 50px; height: 50px;  background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/swift.png" alt="Swift" style="width: 50px; height: 50px; background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/swiftui.png" alt="SwiftUI" style="width: 50px; height: 50px; background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/flutter.png" alt="Flutter" style="width: 50px; height: 50px;  background-color: #f9f9f9; padding: 5px;">
+                                <img src="img/c.png" alt="Embedded C" style="width: 50px; height: 55px;  background-color: #f9f9f9; padding: 5px;">
+                            </div>
+
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="mailto:zawwinmyat.dev@gmail.com?subject=Inquiry&body=Hello," target="_blank">
+								    <span>Contact me!</span>
+								</a>
+
+								<a class="primary_btn tr-bg" href="#" onclick="copyEmail(); return false;">
+								    <span>Copy email!</span>
+								</a>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/my_photo2.jpg" alt="" style="border-radius: 12px; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap" id="about">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us2.jpg" alt="" style="border-radius: 12px; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<!-- <h2>let’s <br>
+							Introduce about <br>
+							myself</h2> -->
+							<h2>Who am I?</h2>
+						<p>
+							I'm a versatile developer proficient in Kotlin, Android XML, Jetpack Compose, Swift, SwiftUI, UIKit, Flutter, and Embedded C. I build seamless mobile experiences across Android and iOS platforms. My expertise spans both modern and traditional frameworks, ensuring robust and efficient app development.
+						</p>
+						
+						<div class="section" style="margin-bottom: 20px;">
+                            <h4 style="color: #6a0dad;">B.C.Sc (Bachelor of Computer Science)</h4>
+                            <div class="subheading" style="color: #666; font-size: 14px; margin-bottom: 10px;">University of Computer Studies (Mandalay)</div>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> Final Year Major: Algorithm Analysis & Data Mining
+                                </li>
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> Qualified to proceed to M.C.Sc
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section" style="margin-bottom: 20px;">
+                            <h4 style="color: #6a0dad;">IELTS</h4>
+                            <div class="subheading" style="color: #666; font-size: 14px; margin-bottom: 10px;">British Council | September 2022</div>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> Overall Band Score: 6.5
+                                </li>
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> 7.5 in Listening
+                                </li>
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> 6.5 in Reading
+                                </li>
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> 6.5 in Writing
+                                </li>
+                                <li style="margin-bottom: 5px; position: relative; padding-left: 20px;">
+                                    <span style="position: absolute; left: 0; color: #6a0dad; font-weight: bold;">•</span> 6.0 in Speaking
+                                </li>
+                            </ul>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+<!-- 	<section class="brand_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo3.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo4.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo5.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo6.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo7.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo8.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo9.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">10</span>
+							<span class="smll">Years Experience Working</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call us now</p>
+								<h3>(+1)-800-555-6789</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================ End Brand Area =================-->
+
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Recently done projects<br>
+							& Achievements </h2>
+					</div>
+				</div>
+			</div>
+			<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">all</li>
+					<li data-filter=".android">android native</li>
+					<li data-filter=".ios">ios native</li>
+					<li data-filter=".flutter">flutter</li>
+					<li data-filter=".freelance">freelanced</li>
+					<li data-filter=".embedded"> embedded systems</li>
+					<li data-filter=".achievements">Achievements</li>
+				</ul>
+			</div>
+	
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+
+					<!-- iOS Projects -->
+
+					<a href="morse_alchemist.html">
+						<div class="col-lg-4 col-md-6 all ios">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/morse_alchemist/morse_alchemist_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="morse_alchemist.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="morse_alchemist.html">Morse Alchemist (iOS)</a></h4>
+								<p class="max-lines">Morse Alchemist is designed translate Morse Code into text and vice versa. It utilized SwiftUI and AVFoundation.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">iOS</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">SwiftUI</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">AVFoundation</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="electro_archer.html">
+						<div class="col-lg-4 col-md-6 all ios">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/electro_archer/electro_archer_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="electro_archer.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="electro_archer.html">Electro Archer (iOS)</a></h4>
+								<p class="max-lines">Electro Archer is an essential app for electronics students, offering a comprehensive toolkit that includes electronic calculations, pinout diagrams and more.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">SwiftUI</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">SwiftData</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">WidgetKit</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Animation</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">AppStorage</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">PrivacyManifest</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="archer_tasks_ios.html">
+						<div class="col-lg-4 col-md-6 all ios">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/archer_tasks_ios/archer_tasks_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="archer_tasks_ios.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="archer_tasks_ios.html">Archer Tasks (iOS)</a></h4>
+								<p class="max-lines">“Archer Tasks” is a task manger or to-do-list application. It can be used to manage your tasks that have to be completed in folders, so called lists.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">SwiftUI</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">CoreData</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Localization</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">TipKit</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">UserDefaults</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">ScenePhase</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="rick_and_morty_ios.html">
+						<div class="col-lg-4 col-md-6 all ios">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/rick_and_morty_world_ios/rick_and_morty_ios_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="rick_and_morty_ios.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="rick_and_morty_ios.html">Rick & Morty World (iOS UIKit)</a></h4>
+								<p class="max-lines">Rick and Morty World uses UIKit, Storyboards & Programatic approach, Alamofire, SDWebImage, RealmSwift, UIMotionEffect and CoreAnimation’s CAEmitter Layer, App Theming,Lottie, iOS haptics, UserDefaults,  Layout Constraints, UITableView, UICollectionView, UITabBarController, UIStackView, UIImageView, UIAlertController, SFSafariViewController, etc…</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">UIKit</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">RealmSwift</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Alamofire</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">SDWebImage</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">CoreAnimation</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Lottie</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+					<!-- Android Projects -->
+
+					<a href="next_outline_lite.html">
+						<div class="col-lg-4 col-md-6 all android freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/next_outline_lite/nextoutline_lite_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="next_outline_lite.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="next_outline_lite.html">Next Outline Lite (VPN)</a></h4>
+								<p class="max-lines">Next Outline Lite uses VpnService to create an encrypted network proxy server, ensuring secure, private internet browsing. The use of VpnService is essential for providing the core VPN functionality, allowing Next Outline Lite to securely route your network traffic through a protected connection, even on public or shared networks. This feature safeguards your data privacy and enhances security while you browse online. Next Outline Lite has the following features.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Android XML</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">VPN</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Download Speed Test</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Connection Info</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">Google AdMob</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Time Limit 2 Hr</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="next_outline.html">
+						<div class="col-lg-4 col-md-6 all android freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/next_outline/next_outline_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="next_outline.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="next_outline.html">Next Outline (VPN)</a></h4>
+								<p class="max-lines">Next Outline uses VpnService to create an encrypted network proxy server, ensuring secure, private internet browsing. The use of VpnService is essential for providing the core VPN functionality, allowing Next Outline Lite to securely route your network traffic through a protected connection, even on public or shared networks. This feature safeguards your data privacy and enhances security while you browse online. Next Outline Lite has the following features.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Android XML</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">VPN</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="next_movie.html">
+						<div class="col-lg-4 col-md-6 all android freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/next_movie/next_movie_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="next_movie.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="next_movie.html">Next Movie</a></h4>
+								<p class="max-lines">A new freelance Android project with Jetpack Compose for my client has been finished and published to the Google Play Store. It is Next Movie, which allows users to enjoy movies and series in Burmese with monthly subscription. </p>
+							</div>
+
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Jetpack Compose</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">ExoPlayer</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Offline Download</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Supabase</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Subscription</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">Dagger Hilt</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Encrypted m3u8 streaming</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+					<a href="anime_discovery.html">
+					<div class="col-lg-4 col-md-6 all android">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/anime_discovery/anime_discovery_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="anime_discovery.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="anime_discovery.html">Anime Discovery</a></h4>
+								<p class="max-lines">Anime Discovery is a mobile application that leverages the Jetpack Compose and Kotlin, and it can be utilized to explore a wide variety of anime, manga, reviews characters, studios and staffs affiliated with anime or manga. Overall, this app is based on the AniList GraphQL API. I built this app as a mean of Jetpack Compose portfolio that exhibits the competency to deal with GraphQL APIs, OAuth 2.0 and various technological aspects which is presented below.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Jetpack Compose</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Apollo GraphQL</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">OAuth2.0</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Compose MotionLayout</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Paging3</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">Koin DI</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Shortcuts</span>
+
+          				  </div>
+
+						</div>
+					</div>
+				</a>
+
+
+					<div class="col-lg-4 col-md-6 all android">
+						<div class="portfolio_box">
+
+							<a href="archer_tasks.html">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/archer_tasks/archer_tasks_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="archer_tasks.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							</a>
+
+							<div class="short_info">
+								<h4><a href="archer_tasks.html">Archer Tasks (Android)</a></h4>
+								<p class="max-lines">Archer Tasks is a task manager or to do list application that helps you manage tasks that have to be done with separated lists.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Jetpack Compose</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Realm</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">MVVM</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Dagger Hilt</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Clean Architecture</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">Localization</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Kotlin</span>
+          				  </div>
+
+						</div>
+					</div>
+
+
+					<a href="rick_and_morty_android.html">
+					<div class="col-lg-4 col-md-6 all android">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/rick_and_morty/rick_and_morty.png" alt="">
+								<div class="overlay"></div>
+								<a href="rick_and_morty_android.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="rick_and_morty_android.html">Rick and Morty Universe (Android Compose)</a></h4>
+								<p class="max-lines">Rick and morty description</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Jetpack Compose</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Room</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Retrofit</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Dagger Hilt</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">MVVM</span>
+				                <span class="custom-chip me-1" style="background-color: #09ba9d; color: #fff;">Coroutines & Flows</span>
+				                <span class="custom-chip me-1" style="background-color: #cc8710; color: #fff;">Paging 3</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+				    <!-- Yo Store -->
+				    <a href="yo_store.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/yo_store/yo_store_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="yo_store.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="yo_store.html">Yo! Store</a></h4>
+								<p class="max-lines">Yo! Store is a mobile application made for a client who is reselling phone bills and game items, such as diamonds, weekly-passes in Mobile Legends Bang Bang, UC in PUBG Moble, gems and gold-passes in Clash of Clans, diamonds in Freefire and genesis crystals in Genshin Impact, etc.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Order Management</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="next_learning_desktop.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/next_learning/next_learning_desktop1.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="next_learning_desktop.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="next_learning_desktop.html">Next Learning (Windows & MacOS Softwares)</a></h4>
+								<p class="max-lines">A freelance project for Windows and MacOS, built with flutter. It is an online learning application which allows users to study online. </p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Windows</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">MacOS</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Digital Wallet</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Media Playback</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Redux & Hydrated Bloc</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Hive</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="next_learning_mobile.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/next_learning/nextlearning_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="next_learning_mobile.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="next_learning_mobile.html">Next Learning</a></h4>
+								<p class="max-lines">Next Learning is a mobile application developed for a client. It is an online learning application which allows users to study online.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Suapabase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Digital Wallet</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Media Playback</span>
+				                <span class="custom-chip me-1" style="background-color: #2914e0; color: #fff;">Offline Download</span>
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Redux & Hydrated Bloc</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Hive</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="padonmar.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/padonmar/padonmar_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="padonmar.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="padonmar.html">Padonmar Book Store</a></h4>
+								<p>Padonmar is an app developed for Padonmar book store based in Yangon, Myanmar.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Order Management</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Authentication</span>
+				                 <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Redux</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Hive</span>
+
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+					<a href="rainbow_house.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/rainbow_house/rainbow_house_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="rainbow_house.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="rainbow_house.html">Rainbow House</a></h4>
+								<p class="max-lines">This app was developed for a client who is selling painting products in Mandalay, Myanmar. His shop, Rainbow House, is distributing a wide variety of paints and related accessories in retail and wholesale.I developed 2 apps: one for customers of Rainbow House and another one for the owner of Rainbow House.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Order Management</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Authentication</span>
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Bluetooth Thermal Printing</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Redux</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Hive</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="surprise_tea.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/surprise_tea/surprise_tea_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="surprise_tea.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="surprise_tea.html">Surprise Tea</a></h4>
+								<p class="max-lines">Surprise Tea is a mobile application developed for “Surprise Tea”, a tea shop based in Mandalay (Myanmar).</p>
+							</div>
+
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Order Management</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Authentication</span>
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Bluetooth Thermal Printing</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Redux</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Hive</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="qr_menu.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/qr_menu/qr_menu.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="qr_menu.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="qr_menu.html">Digital QR Menu</a></h4>
+								<p class="max-lines">Digital QR Menu was made for Suprise Tea, a tearoom based in Mandalay, Myanmar.</p>
+							</div>
+
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase</span>
+				                <span class="custom-chip me-1" style="background-color: #17a2b8; color: #fff;">Order Management</span>
+			
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Bluetooth Thermal Printing</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Redux</span>
+				                <span class="custom-chip me-1" style="background-color: #e01444; color: #fff;">Hive</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="msn.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/msn/msn_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="msn.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="msn.html">MSN</a></h4>
+								<p class="max-lines">It is freelance project made for MSN accessories distribution. Order mobile accessories! After working for 4 months in MSN, I transferred the project to a software company for further maintenance.</p>
+							</div>
+
+
+						</div>
+					</div>
+					</a>
+
+					<a href="honey_moon.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/honeymoon/honeymoon_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="honey_moon.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="honey_moon.html">Honeymoon</a></h4>
+								<p class="max-lines">Honeymoon is a dating platform developed for a client, with Flutter and Firebase as a backend service, in March & April 2023. </p>
+							</div>
+
+
+						</div>
+					</div>
+					</a>
+
+					<a href="golden_myanmar.html">
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/golden_myanmar/Golden Myanmar Cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="golden_myanmar.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="golden_myanmar.html">Golden Myanmar Exchange Rate</a></h4>
+								<p class="max-lines">Golden Myanmar is a mobile app which can be used to know real world exchange rates, especially Malaysian Ringgit to Burmese Kyat, in different exchange counter in real time. It was developed for a burmese client from Malaysia. Moreover, It also has local news features, and integrated Google AdMob. </p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				            </div>
+
+				            <div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				            </div>
+
+						</div>
+					</div>
+					</a>
+
+					<!-- <div class="col-lg-4 col-md-6 all upcoming following"> -->
+					<a href="live4d_result.html">	
+					<div class="col-lg-4 col-md-6 all flutter freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/live4d_result/live_4d_result_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="live4d_result.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="short_info">
+								<h4><a href="live4d_result.html">Live4D Results</a></h4>
+								<p class="max-lines">Live 4D Result is an app which allows users to view Malaysia 4D results in real time. The app was developed for a client from Malaysia in February 2023. It also includes Google AdMob integration.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Firebase as backend service</span>
+
+				            </div>
+
+
+						</div>
+					</div>
+					</a>
+
+					<a href="8051_projects.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/8051_projects/8051_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="8051_projects.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="8051_projects.html">8051 Microcontroller Projects (Free & Paid)</a></h4>
+								<p class="max-lines">Keil uVision5 projects and Proteus Simulations for 8051 Microcontroller, specifically AT89C51 chip. I developed 8051 Microcontroller Projects in 2 separate apps: FREE and PREMIUM. In FREE version, some of the projects are locked, which means that users have to purchase premium edition if they need to get access to locked projects.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Paid & Free Apps</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="avr_projects.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/avr_projects/avr_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="avr_projects.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="avr_projects.html">AVR Microcontroller Projects (Free & Paid)</a></h4>
+								<p class="max-lines">Atmel(Microchip) Studio Projects and Proteus Simulations for AVR Microcontroller, specifically ATMega328p. I developed AVR Microcontroller Projects in 2 separate apps: FREE and PREMIUM. In FREE version, some of the projects are locked, which means that users have to purchase premium edition if they need to get access to locked projects.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Paid & Free Apps</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="pic_projects.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/pic_projects/pic_projects_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="pic_projects.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="pic_projects.html">PIC Microcontroller Projects (Free & Paid)</a></h4>
+								<p class="max-lines">MPLABX Projects, Proteus Simulation and XC8 Compiler projects for PIC Microcontroller (PIC16F887). I developed PIC Microcontroller Projects in 2 separate apps: FREE and PREMIUM. In FREE version, some of the MPLABX Projects, Proteus Simulation and XC8 Compiler projects are locked, which means that users have to purchase premium edition if they need to get access to locked projects.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Paid & Free Apps</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="pico_projects.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/pico_projects/pico_projects_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="pico_projects.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="pico_projects.html">Pico Projects (Free & Paid)</a></h4>
+								<p class="max-lines">MicroPython projects for Raspberry Pi Pico (RP2040 Microcontroller). I developed PICO Projects in 2 separate apps: FREE and PREMIUM. In FREE version, some of the MicroPython projects are locked, which means that users have to purchase premium edition if they need to get access to locked projects. </p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Paid & Free Apps</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="bagan_tour.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/bagan_tour/bagan_tour_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="bagan_tour.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="bagan_tour.html">Bagan Tour</a></h4>
+								<p class="max-lines">If you're a tourist traveling in Bagan, this app will help you a lot. Using this app, you will be able to explore places, temples, pagodas, restaurants and hotels on Google Map and detail of these places.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Google Maps</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="movie_explorer.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/movie_explorer/movie_explorer_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="movie_explorer.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="movie_explorer.html">Movie Explorer</a></h4>
+								<p class="max-lines">Movie explorer is an app to explore movies and TV series. The app depends on the TMDB API, which provides access to immense amount of movie data.</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">TMDB API</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+					<a href="maker_learn.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/maker_learn/maker_learn.png" alt="">
+								<div class="overlay"></div>
+								<a href="maker_learn.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="maker_learn.html">Maker Learn</a></h4>
+								<p class="max-lines">Description</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Quizzes</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+					<a href="lcd_seven_seg.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/lcd_seven_seg/lcd_seven_seg_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="lcd_seven_seg.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="lcd_seven_seg.html">LCD & 7 Segment Display Character Generator</a></h4>
+								<p class="max-lines">Generate 5x7 Matrix (Single Character) Cell of LCD / Generate Hexadecimal and binary array for custom icons / Common Cathode and Common Anode 7 segment Displays’ Custom Character</p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+				                <span class="custom-chip me-1" style="background-color: #28a745; color: #fff;">Paid App</span>
+          				  </div>
+
+						</div>
+					</div>
+					</a>
+
+
+					<a href="electro_calculation.html">
+					<div class="col-lg-4 col-md-6 all flutter">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/electro_calculation/electro_calculation_cover.png" alt="">
+								<div class="overlay"></div>
+								<a href="electro_calculation.html">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="short_info">
+								<h4><a href="electro_calculation.html">Electro Calculation</a></h4>
+								<p class="max-lines">Electro Calculation is a mobile app designed to calculate some rudimentary circuits and component values. This is my first mobile app developed with flutter. </p>
+							</div>
+
+							<div class="chip-container mt-2">
+				                <span class="custom-chip me-1" style="background-color: #007bff; color: #fff;">Flutter</span>
+          				  </div>
+
+						</div>
+					</div>
+
+
+					<!-- Embedded Systems : START HERE -->
+					<div class="col-lg-4 col-md-6 all embedded freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/counter_cover.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>Industrial Counting Card</h4>
+								<p>PCB design + Firmware</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all embedded freelance">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/pic_cover.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>PIC Microcontroller Development Board</h4>
+								<p>PCB design</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all embedded">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/pico_cover.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>RPi Pico Dev Board</h4>
+								<p>PCB design</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all embedded">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/temperature_cover.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>Body Temperature Monitor ESP32 + TFT LCD</h4>
+								<p>PCB design</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all embedded">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/rfid_cover.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>RFID Library System</h4>
+								<p>PCB design</p>
+							</div>
+						</div>
+					</div>
+					<!-- Embedded Systems : END HERE -->
+
+					<!-- Achievements : START HERE -->
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/ielts.jpg" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>IELTS Exam</h4>
+								<p>Listening: 7.5, Reading & Writing: 6.5, Speaking: 6.0, Overall: 6.5</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/a6.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>MYTDP2020</h4>
+								<p>Prize Money: $2000 + Entrepreneurship Bootcamp</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/KDDI Excellent Award 2020 Hexa Dev.jpg" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>KDDI Excellent Award 2020 Hexa Dev</h4>
+								<p>KDDI Excellent Award 2020 Hexa Dev</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/Incentive AWARD.jpg" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>KDDI Incentive Award 2019</h4>
+								<p>Incentive Award ACKF2019</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/KDDI MYANMAR AWARD.jpg" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>KDDI Myanmar Award 2019</h4>
+								<p>KDDI Myanmar Award ACKF2019</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/icpc1.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>ICPC 2017</h4>
+								<p>2017 Myanmar Collegiate Programming Contest</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 all achievements">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/certificates/icpc2.png" alt="">
+								<div class="overlay"></div>
+								<div class="icon">
+									<span class="lnr lnr-cross"></span>
+								</div>
+							</div>
+							<div class="short_info">
+								<h4>ICPC 2018</h4>
+								<p>2018 Myanmar Collegiate Programming Contest</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Achievements : END HERE -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area">
+		<div class="container" id = "services">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2> Service Offers </h2>
+						<p>
+							Here are the services I offer...
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/android.png" alt="" style="width: 63px; height: 63px;">
+						<h4>Android App Development</h4>
+						<p>Crafting seamless and high-performance Android apps using Jetpack Compose and XML for modern user experiences.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/ios.png" alt="" style="width: 63px; height: 63px;">
+						<h4>iOS Development</h4>
+						<p>Building robust and intuitive iOS applications with Swift, SwiftUI, and UIKit for outstanding performance.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/flutter.png" alt="" style="width: 63px; height: 63px;">
+						<h4>Cross Platform</h4>
+						<p>Developing cross-platform applications with Flutter to deliver fast and consistent experiences across devices.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/pcb.png" alt="" style="width: 63px; height: 63px;">
+						<h4>PCB Design</h4>
+						<p>Designing efficient and reliable PCB layouts for innovative electronic solutions.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+
+	<!--================ Start Testimonial Area =================-->
+	<!-- <div class="testimonial_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>client say about me</h2>
+						<p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+							 beginning signs open god you're gathering ithe</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t1.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Elite Martin</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="testi_item">
+        				<div class="row">
+        					<div class="col-lg-4">
+        						<img src="img/testimonials/t2.jpg" alt="">
+        					</div>
+        					<div class="col-lg-8">
+        						<div class="testi_text">
+        							<h4>Davil Saden</h4>
+									<p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+			</div>
+		</div>
+	</div> -->
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Newsletter Area =================-->
+	<!-- <section class="newsletter_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">get update from anywhere</h2>
+						<p class="text-white">
+							Bearing Void gathering light light his eavening unto dont afraid. 
+						</p>
+						<div class="subcribe-form" id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+								</div>
+								<button class="primary-btn hover d-inline">Get Started</button>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!--================ End Newsletter Area =================-->
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area" id = "contact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4>Find Me On</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.facebook.com/zaw.myat.560" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://open.kattis.com/users/zaw-myat" target="_blank"><i class="fa fa-code"></i></a>
+							<a href="https://www.linkedin.com/in/zaw-win-myat-1054b525b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/zawwynnmyat" target="_blank"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>

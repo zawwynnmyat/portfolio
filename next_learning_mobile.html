@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Learning (Mobile App) Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Next Learning (Mobile App)</h1>
+                <p>Next Learning is a mobile application developed for a client. It is an online learning application which allows users to study online.</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.archersolution.next_learning_mobile" class="google-play-btn" target="_blank">
+                    <img src="img/google_play_btn.webp" height="40px" alt="Get it on Google Play">
+                </a>
+                
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/next_learning/nextlearning_icon.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Explore a wide variety of online courses in one app</li>
+                    <li>Well prepared learning paths</li>
+                    <li>Digital Wallet to purchase courses</li>
+                    <li>Learn with subtitles</li>
+                    <li>Download video courses for offline learning (downloading videos will not be visible in the file manager, which means that it is downloaded as cache)</li>
+                    <li>Download course resources files (This type of download saves zip files in the Download folder.) Background Download / Show the download progress as a notification form / Parallel Download)</li>
+                    <li>Public/Locked Video Lessons</li>
+                    <li>Next/Previous Skip buttons, Forward/Backward 10 sec skippable</li>
+                    <li>Thorough course details and learning paths</li>
+                    <li>Shopping Cart / Wishlist (If a course has already purchased, that course cannot be added to shopping cart and wishlist. If a course is in the shopping cart, that course cannot be in the wishlist. If a course is in the wishlist, that course cannot be in the wishlist</li>
+                    <li>Disabled taking screenshot and screen recording</li>
+                    <li>There are 2 sign-in methods: Email/password login & Google Sign-in</li>
+                    <li>Maximum number of simultaneous device session is 3</li>
+                    <li>Forgot Password / Change Password</li>
+                    <li>Delete Account (For store policy compliance)</li>
+                    <li>Email Verification</li>
+                    <li>Digital Wallet (Users can topup their digital wallet with topup codes, A topup code can be used only ONCE)</li>
+                    <li>Search Courses</li>
+                    <li>Filtering Core Topics (eg: Business, Technology, Creative, etc.;) , Category, Subcategory Sub-subcategory</li>
+                    <li>Filtering Bestselling, Highest Rated, New, Hot & New Courses</li>
+                    <li>Course Instructors’ Profile, with their courses</li>
+                    <li>Recommended Courses</li>
+                    <li>Responsive User Interface for different screen sizes</li>
+                    <li>(Admin Side) Insert courses and learning path with JSON file.</li>
+                    <li>(Admin Side) download course JSON</li>
+                    <li>(Admin Side) Define topic, category, subcategory, sub-subcategory</li>
+                    <li>(Admin Side) Register top-up codes</li>
+                    <li>(Admin Side) Manage Users’ devices session</li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Flutter for cross-platform development</li>
+                    <li>Supabase as a backend service</li>
+                    <li>Hydrated BLoC</li>
+                    <li>Hive</li>
+                    <li>MediaKit</li>
+                    <li>Custom PostgreSQL Function</li>
+                </ul>
+                </ul>
+            </div>
+            <div class="main-poster">
+                <img src="img/next_learning/nextlearning_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/next_learning/page1.png" alt="Poster 1">
+                <img src="img/next_learning/page1 – 28.png" alt="Poster 2">
+                <img src="img/next_learning/page1 – 29.png" alt="Poster 3">
+                <img src="img/next_learning/page1 – 30.png" alt="Poster 4">
+                <img src="img/next_learning/page1 – 31.png" alt="Poster 5">
+                <img src="img/next_learning/page1 – 32.png" alt="Poster 6">
+                <img src="img/next_learning/page1 – 33.png" alt="Poster 7">
+                <img src="img/next_learning/page1 – 34.png" alt="Poster 8">
+                <img src="img/next_learning/page1 – 35.png" alt="Poster 9">
+                <img src="img/next_learning/page1 – 36.png" alt="Poster 10">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

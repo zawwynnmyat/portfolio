@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Mobile App</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Yo! Store</h1>
+                <p>Yo! Store is a mobile application made for a client who is reselling phone bills and game items, such as diamonds, weekly-passes in Mobile Legends Bang Bang, UC in PUBG Moble, gems and gold-passes in Clash of Clans, diamonds in Freefire and genesis crystals in Genshin Impact, etc.</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.archersolution.yogamestore" class="google-play-btn" target="_blank">
+                    <img src="img/google_play_btn.webp" height="40px" alt="Get it on Google Play">
+                </a>
+                
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/yo_store/icon_yo_store.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>The app allows users to sign-in or sign-up with Google. </li>
+                    <li>Game ID validator for Mobile Legends Bang Bang</li>
+                    <li>Easy to order game items</li>
+                    <li>Order Tracking (According to my client, it must have 2 order statuses: “Pending” for pending orders and “Done” for orders which have already completed.</li>
+                    <li>Order phone bills and internet data of 4 biggest operators in Myanmar: Ooredoo, ATOM, MPT and MyTel.</li>
+                    <li>Search Games</li>
+                    <li>Flash Sales</li>
+                    <li>
+                        In terms of admin side, Admin can check and update order status, Search Game ID, Copiable Game IDs and easy to proceed, Add / Update / Delete item information, prices and discounts, Add / Update / Delete Payment Accounts
+                    </li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Flutter for cross-platform development</li>
+                    <li>Firebase as a backend service</li>
+                </ul>
+            </div>
+            <div class="main-poster">
+                <img src="img/yo_store/yo_store_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/yo_store/page1.png" alt="Poster 1">
+                <img src="img/yo_store/page2.png" alt="Poster 2">
+                <img src="img/yo_store/page3.png" alt="Poster 3">
+                <img src="img/yo_store/page4.png" alt="Poster 4">
+                <img src="img/yo_store/page5.png" alt="Poster 1">
+                <img src="img/yo_store/page6.png" alt="Poster 2">
+                <img src="img/yo_store/page7.png" alt="Poster 3">
+                <img src="img/yo_store/page8.png" alt="Poster 4">
+                <img src="img/yo_store/page9.png" alt="Poster 1">
+                <img src="img/yo_store/page10.png" alt="Poster 2">
+                <img src="img/yo_store/page11.png" alt="Poster 3">
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

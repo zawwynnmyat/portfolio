@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Movie App Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+
+    .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+    }
+
+    .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Next Movie</h1>
+                <p>A new freelance Android project with Jetpack Compose for my client has been finished and published to the Google Play Store. It is Next Movie, which allows users to enjoy movies and series in Burmese with monthly subscription. It has the following functionalities.</p>
+
+                <a href="https://play.google.com/store/apps/details?id=com.archersolution.nextmovie" class="google-play-btn" target="_blank">
+                    <img src="img/google_play_btn.webp" height="40px" alt="Get it on Google Play">
+                </a>
+                
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/next_movie/next_moive_logo.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Allows users to explore movies & series depending on genre, language, release year, rating and so forth. The most interactive feature is “Continue Watching” and “Suggestions For You”.</li>
+                    <li>With Android ExoPlayer, user can download movies for offline playback. It uses m3u8 http streaming with encrypted connection; therefore, there is no any hesitation while video is playing when your internet connection is stable enough.</li>
+                    <li>Users which are in the monthly subscription periods, they can watch movies without limits. If it is expired, they can only watch movie trailers and free movies. However, they can extend their subscription period.</li>
+                    <li>With Speech to Text, users can search movies with voice or typing with hand. </li>
+                    <li>Users can also explore casts, director(s), writers(s), maturity rating, studios, keywords in movies and tv series.</li>
+                    <li>The maximum number of login devices is 2 (two).</li>
+                    <li>Users can also lock video controls while watching movies. Video controls will automatically disappears after 6 seconds of inactivity. </li>
+                    <li>Playback speeds are 0.5x, 0.75x, 1x, 1.25x and 1.5x.</li>
+                    <li>It has 4 subtitle options: Myanmar, Myanmar + Spoken language in movies, Spoken Language only and OFF.</li>
+                    <li>Control brightness which lifecycle awareness in android and also control volume. Mute audio, skip forward/backward 10 seconds.</li>
+                    <li>Background download, pause & resume download</li>
+                    <li>Add favorite, movies and series to favorite list</li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Jetpack Compose & Kotlin</li>
+                    <li>Encrypted m3u8 HLS Streaming with ExoPlayer</li>
+                    <li>Offline & Background Download for offline media playback</li>
+                    <li>Dagger Hilt for Dependency Injection</li>
+                    <li>Monthly Subscription Feature</li>
+                    <li>Supabase as a backend service</li>
+                    <li>Paging3 for pagination</li>
+                    <li>Data Store Preferences/Lottie Composition/Coil Async Image Loading/Native Splash Screen API</li>
+                </ul>
+            </div>
+            <div class="main-poster">
+                <img src="img/next_movie/next_movie_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/next_movie/page1.png" alt="Poster 1">
+                <img src="img/next_movie/page2.png" alt="Poster 2">
+                <img src="img/next_movie/page3.png" alt="Poster 3">
+                <img src="img/next_movie/page4.png" alt="Poster 4">
+                <img src="img/next_movie/page5.png" alt="Poster 5">
+                <img src="img/next_movie/page6.png" alt="Poster 6">
+                <img src="img/next_movie/page7.png" alt="Poster 7">
+                <img src="img/next_movie/page8.png" alt="Poster 8">
+                <img src="img/next_movie/page9.png" alt="Poster 9">
+                <img src="img/next_movie/page10.png" alt="Poster 10">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

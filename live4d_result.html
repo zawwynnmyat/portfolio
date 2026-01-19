@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live4D Results Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Live4D Results</h1>
+                <p>Live 4D Result is an app which allows users to view Malaysia 4D results in real time. The app was developed for a client from Malaysia in February 2023. It also includes Google AdMob integration.</p>
+
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/live4d_result/live4d_result_icon.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Explore 4D Results of Singapore 4D, Magnum, Damacai, Toto, Sabah 88, Sarawak, Sandakan, Grand Dragon, and 9 Lotto</li>
+                    <li>Lucky Number and Bookmarking favorite numbers</li>
+                    <li>Number History</li>
+                    <li>Notifications</li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Flutter for cross-platform development</li>
+                </ul>
+            </div>
+            <div class="main-poster">
+                <img src="img/live4d_result/live_4d_result_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/live4d_result/page1.png" alt="Poster 1">
+                <img src="img/live4d_result/page2.png" alt="Poster 2">
+                <img src="img/live4d_result/page3.png" alt="Poster 3">
+            </div>
+        </section>
+    </div>
+</body>
+</html>

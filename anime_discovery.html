@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Discovery Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+
+        /* Section 1: App Intro */
+        .app-intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .app-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .app-logo {
+            flex: 0 0 auto;
+            text-align: right;
+        }
+
+        .app-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .google-play-btn img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+
+        /* Section 2: Features and Tech Stack */
+        .features-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .main-poster img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section 3: Additional Posters */
+        .additional-posters {
+            margin-bottom: 40px;
+        }
+
+        .posters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 20px;
+        }
+
+        .posters-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .app-intro {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .app-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .app-logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .features-tech {
+                flex-direction: column;
+            }
+
+            .main-poster {
+                order: -1;
+            }
+        }
+
+
+        .parent{
+        margin: 50px;
+    }
+    .logoImageDiv{
+        display: flex;
+        width: 150px;
+        height: 150px;
+        
+    }
+    .logo{
+        width: 100%;
+        border-radius: 30px;
+    }
+    .logoBox{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: App Name, Description, and Logo -->
+        <section class="app-intro">
+            <div class="app-info">
+                <h1>Anime Discovery</h1>
+                <p>Anime Discovery is a mobile application that leverages the Jetpack Compose and Kotlin, and it can be utilized to explore a wide variety of anime, manga, reviews characters, studios and staffs affiliated with anime or manga. Overall, this app is based on the AniList GraphQL API. I built this app as a mean of Jetpack Compose portfolio that exhibits the competency to deal with GraphQL APIs, OAuth 2.0 and various technological aspects which is presented below.</p>
+
+                <a href="https://appgallery.huawei.com/app/C113421971" class="google-play-btn" target="_blank">
+                    <img src="img/huwei_app_gallery.png" height="40px" alt="Get it on Huawei App Gallery">
+                </a>
+
+                <a href="https://drive.google.com/file/d/17eRYZ72w0QcyHL6qH5rdMWJPovXz_1_P/view" class="google-play-btn" target="_blank">
+                    <img src="img/download_apk_btn.png" height="40px" alt="Direct Download Anime Discovery">
+                </a>
+                
+            </div>
+
+            
+             <div class="parent">
+    <div class="logoBox">
+        <div class="logoImageDiv" >
+            <img class="logo" src="img/anime_discovery/anime_discovery_icon.png" alt="">
+        </div>
+
+    </div>
+   </div>
+            <!-- <div class="app-logo">
+                <img src="img/yo_store/icon_yo_store.png" alt="App Logo">
+            </div>
+             -->
+
+        </section>
+
+        <!-- Section 2: Core Features, Tech Stack, and Main Poster -->
+        <section class="features-tech">
+            <div class="features">
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Explore thousands of Japanese Animes including trending anime</li>
+                    <li>Explore Manga</li>
+                    <li>Explore Studios, Staffs and Anime Characters</li>
+                </ul>
+                <h2>Tech Stack</h2>
+                <ul>
+                    <li>Jetpack Compose and Kotlin</li>
+                    <li>Koin for Dependency Injection</li>
+                    <li>AniList GraphQL API, Apollo Client, Apollo Http Cache</li>
+                    <li>Retrofit & okHttp : To implement OAuth 2.0 authentication flow in a manual way and to intercept access token with the intention of making authenticated requests.</li>
+                    <li>Motion Layout and Constraint Layout: Used to animate the motion of anime/manga detail pages, characters/staff detail pages and review detail pages. </li>
+                    <li>Nested Navigation using Compose Navigation: component that allows easier implementation of navigation from composables.</li>
+                    <li>Static Shortcut and Pinned Shortcut : To show shortcuts menus to navigate characters, studios, staffs and reviews pages when users long click on the app icon or click on the home screen shortcuts.</li>
+                    <li>Paging 3: to paginate GraphQL responses.</li>
+                    <li>MPAndroidChart: is used to visualize media’s score distribution and status distributions and Bar Charts and Pie Charts.</li>
+                    <li>Material 3 Design: Material 3 is the latest Google’s open-source design system. Design and build beautiful, usable products with Material 3. </li>
+                    <li>App Theming : The app also includes theme settings: Follow System, Light Mode and Dark Mode.</li>
+                    <li>Horizontal Pager : is used to make onboarding screen to shows users at once.</li>
+                    <li>Preferences Data Store : to save theme settings, onboarding status and access token.</li>
+                    <li>Pull To Refresh Material 3</li>
+                    <li>Lottie Composition : to visualize Lottie Animations.</li>
+                    <li>Android’s Download Manager : to download cover photo and banner images of a character, staff, anime or manga.</li>
+                    <li>Coil : to load network images.</li>
+                    <li>Coroutines : Kotlin coroutines</li>
+                    <li>Flow : Flows are built on top of coroutines and can provide multiple values. A flow is conceptually a stream of data that can be computed asynchronously.</li>
+                    <li>Splash Screen API : to show a splash screen while the app's process isn't running.</li>
+                    <li>ViewModel : Designed to store and manage UI-related data in a lifecycle conscious way. The ViewModel class allows data to survive configuration changes such as screen rotations.</li>
+                    <li>Clean Architecture: Clean architecture is based on the principle that software systems should be designed with a clear separation of concerns, where each component of the system is responsible for a specific task or functionality.</li>
+                </ul>
+            </div>
+            <div class="main-poster">
+                <img src="img/anime_discovery/anime_discovery_cover.png" alt="Main App Poster">
+            </div>
+        </section>
+
+        <!-- Section 3: Additional Posters -->
+        <section class="additional-posters">
+            <h2>App Screenshots</h2>
+            <div class="posters-grid">
+                <img src="img/anime_discovery/page1 – 8.png" alt="Poster 1">
+                <img src="img/anime_discovery/page1 – 9.png" alt="Poster 2">
+                <img src="img/anime_discovery/page1 – 10.png" alt="Poster 3">
+                <img src="img/anime_discovery/page1 – 11.png" alt="Poster 4">
+                <img src="img/anime_discovery/page1 – 12.png" alt="Poster 5">
+                <img src="img/anime_discovery/page1 – 13.png" alt="Poster 6">
+                <img src="img/anime_discovery/page1 – 15.png" alt="Poster 7">
+                <img src="img/anime_discovery/page1 – 16.png" alt="Poster 8">
+                <img src="img/anime_discovery/page1 – 17.png" alt="Poster 9">
+                <img src="img/anime_discovery/page1 – 18.png" alt="Poster 10">
+            </div>
+        </section>
+    </div>
+</body>
+</html>
